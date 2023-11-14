@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.container-size {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    object-position: right;
+}
+
+#container img.active {
+    display: block;   
+}
+
+.arrow {
+    position: absolute;
+    filter: invert(1);
+    height: 27px;
+    width: 20px;
+    cursor: pointer;
+    z-index: 1; /* Assicurati che le frecce siano posizionate sopra l'immagine */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fa-arrow-up{
+    background-image: url(img/arrow-up-long-solid.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fa-arrow-down-long{
+    background-image: url(img/arrow-down-long-solid.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top {
+    top: 10px;
+}
+
+.bottom {
+    bottom: 10px;
+}
+.image1{
+    background-image: url(img/01.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 20%;
+    filter: brightness(0.5);
+}
+.image2{
+    background-image: url(img/02.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 20%;
+    filter: brightness(0.5);
+}
+.image3{
+    background-image: url(img/03.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 20%;
+    filter: brightness(0.5);
+}
+.image4{
+    background-image: url(img/04.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 20%;
+    filter: brightness(0.5);
+}
+.image5{
+    background-image: url(img/05.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 20%;
+    filter: brightness(0.5);
+}
+.scroll-image{
+    position: absolute;
+    left: 75%;
+    
+}
+.offoverlay{
+    filter: none;
+}
